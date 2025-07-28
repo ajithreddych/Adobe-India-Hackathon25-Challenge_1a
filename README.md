@@ -1,30 +1,46 @@
-# PDF Outline Extractor – Adobe India Hackathon 2025 Round 1A
+# 📄 PDF Outline Extractor – Adobe India Hackathon 2025 (Round 1A)
 
-## 🧠 Problem Statement
+## 🎯 Problem Statement
 
-In Round 1A: **Understand Your Document**, the goal is to build an offline system that accepts PDF documents and extracts a structured outline including:
-- Title
-- Headings: H1, H2, H3
-- Each heading's level and page number
+Build a system that reads a PDF document and extracts a structured outline containing:
+- **Title**
+- **Headings** (`H1`, `H2`, `H3`)
+- **Level** and **page number** for each heading
 
-The output must be a valid JSON file in a defined structure, enabling machines to semantically understand document hierarchies.
+This outline will be used for downstream document intelligence tasks such as semantic search and recommendation systems.
 
 ---
 
-## 📁 Input/Output Format
+## 🧠 Approach
 
-### 🔽 Input:
-PDF files placed inside `/app/input/`
+The application is implemented in `Python` and performs the following:
 
-### 🔼 Output:
-JSON files generated inside `/app/output/` directory in the format:
+1. **Reads PDFs from `/app/input` directory**
+2. **Extracts the document title** from the filename (as a placeholder logic)
+3. **Scans each page** of the PDF using `PyPDF2`
+4. **(Optional)** You can extend it to detect headings using:
+   - Font size & style (requires `pdfminer.six` or `pdfplumber`)
+   - Keyword or pattern matching
+5. **Writes output** in structured JSON format inside `/app/output`
 
-```json
-{
-  "title": "Understanding AI",
-  "outline": [
-    { "level": "H1", "text": "Introduction", "page": 1 },
-    { "level": "H2", "text": "What is AI?", "page": 2 },
-    { "level": "H3", "text": "History of AI", "page": 3 }
-  ]
-}
+Currently, the outline extraction is a stub for H1/H2/H3 levels and is fully customizable for future rounds or advanced handling.
+
+---
+
+## 🧰 Libraries Used
+
+- [`PyPDF2`](https://pypi.org/project/PyPDF2/): For reading PDF content
+- `os`, `json`: For file system and JSON output handling
+
+> ✅ No external models are used. The solution is heuristic-based and lightweight.
+
+---
+
+## 🐳 How to Build and Run (For Documentation Purposes)
+
+> The system is Dockerized and fully compatible with **offline execution** on a Linux `amd64` system with no network access.
+
+### 🔧 Build Docker Image
+
+```bash
+docker build --platform linux/amd64 -t pdf-outline-extractor:latest .
