@@ -35,12 +35,3 @@ Currently, the outline extraction is a stub for H1/H2/H3 levels and is fully cus
 > ✅ No external models are used. The solution is heuristic-based and lightweight.
 
 ---
-
-## 🐳 How to Build and Run 
-
-> The system is Dockerized and fully compatible with **offline execution** on a Linux `amd64` system with no network access.
-
-### 🔧 Build Docker Image
-
-```bash
-docker build --platform linux/amd64 -t pdf-outline-extractor:latest .
