@@ -1,7 +1,3 @@
-# -------------------------------------------------------------
-# 🐳 PDF Outline Extractor - Dockerfile for Adobe Hackathon 2025
-# -------------------------------------------------------------
-
 # ✅ Base image compatible with amd64 architecture (no GPU)
 FROM --platform=linux/amd64 python:3.9-slim
 
