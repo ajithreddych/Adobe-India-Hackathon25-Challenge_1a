@@ -1,18 +1,30 @@
-# Adobe-India-Hackathon25-Challenge_1a
-# Use a lightweight Python image compatible with AMD64
-FROM --platform=linux/amd64 python:3.9-slim
+# PDF Outline Extractor – Adobe India Hackathon 2025 Round 1A
 
-# Set the working directory inside the container
-WORKDIR /app
+## 🧠 Problem Statement
 
-# Copy the main application file into the container
-COPY app.py .
+In Round 1A: **Understand Your Document**, the goal is to build an offline system that accepts PDF documents and extracts a structured outline including:
+- Title
+- Headings: H1, H2, H3
+- Each heading's level and page number
 
-# Create input and output directories
-RUN mkdir -p input output
+The output must be a valid JSON file in a defined structure, enabling machines to semantically understand document hierarchies.
 
-# Install required Python dependencies
-RUN pip install --no-cache-dir PyPDF2
+---
 
-# Define the command to run when the container starts
-CMD ["python", "app.py"]
+## 📁 Input/Output Format
+
+### 🔽 Input:
+PDF files placed inside `/app/input/`
+
+### 🔼 Output:
+JSON files generated inside `/app/output/` directory in the format:
+
+```json
+{
+  "title": "Understanding AI",
+  "outline": [
+    { "level": "H1", "text": "Introduction", "page": 1 },
+    { "level": "H2", "text": "What is AI?", "page": 2 },
+    { "level": "H3", "text": "History of AI", "page": 3 }
+  ]
+}
