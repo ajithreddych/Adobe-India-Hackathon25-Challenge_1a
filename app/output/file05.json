@@ -1,0 +1,210 @@
+{
+    "title": "ml based art style",
+    "outline": [
+        {
+            "level": "H2",
+            "text": "Deep Ensemble Art Style Recognition",
+            "page": 1
+        },
+        {
+            "level": "H2",
+            "text": "Orfeas Menis - Mastromichalakis",
+            "page": 1
+        },
+        {
+            "level": "H2",
+            "text": "Athens, Greece",
+            "page": 1
+        },
+        {
+            "level": "H2",
+            "text": "Athens, Greece",
+            "page": 1
+        },
+        {
+            "level": "H2",
+            "text": "Athens, Greece",
+            "page": 1
+        },
+        {
+            "level": "H1",
+            "text": "I. I NTRODUCTION",
+            "page": 1
+        },
+        {
+            "level": "H2",
+            "text": "Vermeer",
+            "page": 2
+        },
+        {
+            "level": "H1",
+            "text": "II. R ELATED WORK",
+            "page": 2
+        },
+        {
+            "level": "H1",
+            "text": "III. D ATASETS",
+            "page": 2
+        },
+        {
+            "level": "H2",
+            "text": "A. Dataset 1",
+            "page": 2
+        },
+        {
+            "level": "H2",
+            "text": "Early Renaissance, Northern Renaissance, High Renaissance,",
+            "page": 3
+        },
+        {
+            "level": "H2",
+            "text": "Baroque, Rococo, Romanticism, Realism, Impressionism, Post",
+            "page": 3
+        },
+        {
+            "level": "H2",
+            "text": "Impressionism, Expressionism, Symbolism, Fauvism, Cubism,",
+            "page": 3
+        },
+        {
+            "level": "H2",
+            "text": "B. Dataset 2",
+            "page": 3
+        },
+        {
+            "level": "H2",
+            "text": "Painting, Contemporary Realism, Cubism, Early Renaissance,",
+            "page": 3
+        },
+        {
+            "level": "H2",
+            "text": "Expressionism, Fauvism, High Renaissance, Impressionism,",
+            "page": 3
+        },
+        {
+            "level": "H1",
+            "text": "IV. M ETHOD",
+            "page": 3
+        },
+        {
+            "level": "H2",
+            "text": "A. Baseline",
+            "page": 3
+        },
+        {
+            "level": "H2",
+            "text": "B. Simple Ensemble",
+            "page": 4
+        },
+        {
+            "level": "H2",
+            "text": "C. Stacking Ensemble",
+            "page": 4
+        },
+        {
+            "level": "H1",
+            "text": "V. E XPERIMENTAL RESULTS",
+            "page": 4
+        },
+        {
+            "level": "H2",
+            "text": "Level 1 99,70% 62,72% 61,06%",
+            "page": 5
+        },
+        {
+            "level": "H2",
+            "text": "Level 2 91,13% 65,02% 63,12%",
+            "page": 5
+        },
+        {
+            "level": "H2",
+            "text": "Level 3 74,00% 65,13% 64,23%",
+            "page": 5
+        },
+        {
+            "level": "H2",
+            "text": "Level 4 37,01% 50,83% 50,49%",
+            "page": 5
+        },
+        {
+            "level": "H2",
+            "text": "B. Proposed Methodology",
+            "page": 6
+        },
+        {
+            "level": "H2",
+            "text": "Architecture Parameters Layers Input Test Accuracy",
+            "page": 6
+        },
+        {
+            "level": "H1",
+            "text": "VGG 16 14.723.922 16 224×224 56,13%",
+            "page": 6
+        },
+        {
+            "level": "H1",
+            "text": "VGG 19 20.033.618 19 224×224 55,97%",
+            "page": 6
+        },
+        {
+            "level": "H2",
+            "text": "Inception-V3 21.839.666 48 299×299 67,55%",
+            "page": 6
+        },
+        {
+            "level": "H1",
+            "text": "VI. D ISCUSSION",
+            "page": 6
+        },
+        {
+            "level": "H2",
+            "text": "A. Comparative Study",
+            "page": 6
+        },
+        {
+            "level": "H2",
+            "text": "Simple Ensemble 70,33% 67,92%",
+            "page": 6
+        },
+        {
+            "level": "H2",
+            "text": "Stacking Ensemble 72,47% 68,55%",
+            "page": 6
+        },
+        {
+            "level": "H2",
+            "text": "B. Results Observations",
+            "page": 7
+        },
+        {
+            "level": "H2",
+            "text": "Study Accuracy",
+            "page": 7
+        },
+        {
+            "level": "H2",
+            "text": "Study Accuracy Classes Artworks",
+            "page": 7
+        },
+        {
+            "level": "H1",
+            "text": "VII. C ONCLUSION",
+            "page": 8
+        },
+        {
+            "level": "H1",
+            "text": "REFERENCES",
+            "page": 8
+        },
+        {
+            "level": "H2",
+            "text": "8:17, Feb. 2010.",
+            "page": 8
+        },
+        {
+            "level": "H2",
+            "text": "Workshops , 2014.",
+            "page": 8
+        }
+    ]
+}
