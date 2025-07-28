@@ -36,7 +36,7 @@ Currently, the outline extraction is a stub for H1/H2/H3 levels and is fully cus
 
 ---
 
-## 🐳 How to Build and Run (For Documentation Purposes)
+## 🐳 How to Build and Run 
 
 > The system is Dockerized and fully compatible with **offline execution** on a Linux `amd64` system with no network access.
 
